@@ -1,18 +1,68 @@
-
-.nav-enlace{
-    display: inline-block; /* un bloque al lado del otro (en línea).*/
-    background: salmon; /* Color de fondo */
-    color: #fff; /* Color del texto */
-    padding: 10px 30px; /* Espaciado interno */
-    text-decoration: none; /* Sin subrayado */
+body {  /*etiqueta para el cuerpo de la pagina*/
+    font-family: Arial, sans-serif; /* Fuente sans-serif para el cuerpo */
+    margin: 0; /* Elimina el margen por defecto del navegador */
+    padding: 0; /* Elimina el padding por defecto del navegador */
+    background-color: #f4f4f9; /* Color de fondo gris claro */
 }
 
-.nav-enlace:hover{ /* Efecto hover a la clase nav-enlace, e activa cuando el usuario coloca el cursor sobre un elemento y cambia de color*/
+header{  
+    background-color: rebeccapurple;
+    color: white; 
+    padding: 10px 20px;  /* Espaciado interno (arrib, abajo) (izq,der)*/
+    display: flex; /* Flexbox para alinear elementos */
+    justify-content: space-between; /* Espacio entre los elementos */
+    align-items: center; /* Centra verticalmente los elementos */
+}
+
+h1 {
+    margin: 0;
+}
+
+nav a {/*Al usar nav a, estás limitando los estilos a los enlaces dentro del <nav>, sin afectar otros enlaces en la página.*/
+    color: white; /* Color del texto de los enlaces */
+    text-decoration: none; /* Sin subrayado */
+    margin: 0 10px; /* Espacio entre enlaces */
+    padding: 5px 10px; /* Espaciado interno */
+    background: salmon; /* Color de fondo de los enlaces */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+nav a:hover {
     background: rosybrown;
 }
 
-nav{
+.formulario-contacto {
+    max-width: 600px; /* Ancho máximo del formulario */
+    margin: 20px auto; /* Centra el formulario en la página */
+    padding: 20px; /* Espaciado interno */
+    background: white; /* Color de fondo blanco */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);  /*Sombra sutil*/
+}
 
-    background:  rebeccapurple;
-    padding: 10px;
+form label { /* Etiquetas para los campos del formulario */
+    display: block; /* Hace que cada etiqueta ocupe toda la línea */
+    margin-bottom: 5px; /* Espacio entre la etiqueta y el campo */
+    font-weight: bold; /* Negrita para las etiquetas */ 
+}
+
+form input, form textarea { /* Campos de entrada y área de texto */
+    width: 100%; /* Ancho completo del contenedor */
+    padding: 10px; /* Espaciado interno */
+    margin-bottom: 15px; /* Espacio entre campos */
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+form button { /* Botón de envío */
+    background: rebeccapurple; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    border: none;  /* Sin borde */
+    padding: 10px 20px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+
+form button:hover { /* Efecto al pasar el ratón sobre el botón */
+    background: darkmagenta;
 }

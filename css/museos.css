@@ -7,33 +7,42 @@ section { /* espacio entre Secciónes */
     margin-top: 20px; /* Espacio de 20px */
 }
 
-h1{
-    color: #fff; /* Color del texto */
-    background: rebeccapurple; /* Color de fondo */
-    padding: 10px 30px; /* Espaciado interno. 10 espacio arriba y abajo y 30 espacio a la izquierda y derecha */
+header {
+    display: flex; /* Activa Flexbox */
+    justify-content: space-between; /* Separa el <h1> y el <nav> */
+    align-items: center; /* Centra verticalmente los elementos */
+    background: rebeccapurple; /* Color de fondo opcional */
+    padding: 10px 20px; /* Espaciado interno */
+    color: white; /* Color del texto */
     border-radius: 10px; /* Bordes redondeados */
 }
 
-.Bordes_redondeados { /* Clase historia */
+h1 {
+    font-size: 24px; /* Tamaño del texto del encabezado */
+    margin: 0; /* Elimina márgenes para evitar desalineación */
+}
+
+.Bordes_redondeados{ /* Clase*/
     background-color: lightblue; /* Color de fondo */
     color: darkblue; /* Color del texto */
     padding: 10px 30px; /* Espaciado interno. 10 espacio arriba y abajo y 30 espacio a la izquierda y derecha */
     border-radius: 10px; /* Bordes redondeados */
 }
 
-.nav-enlace{ /*clase nav-enlace*/
-    display: inline-block; /* un bloque al lado del otro (en línea).*/
+.nav-enlace { /* Clase para los enlaces de navegación */
+    display: inline-block; /* Mantiene los enlaces en línea */
     background: salmon; /* Color de fondo */
-    color: #fff; /* Color del texto */
-    padding: 10px 30px; /* Espaciado interno */
+    color: white; /* Color del texto */
+    padding: 10px 15px; /* Espaciado interno */
     text-decoration: none; /* Sin subrayado */
+    border-radius: 5px; /* Bordes redondeados */
 }
 
-.nav-enlace:hover{ /* Efecto hover a la clase nav-enlace, e activa cuando el usuario coloca el cursor sobre un elemento y cambia de color*/
-    background: rosybrown;
+.nav-enlace:hover { /* Efecto al pasar el cursor */
+    background: rosybrown; /* Cambia el color de fondo al pasar el cursor */
 }
 
-nav{ /*nav es la etiqueta que contiene el menú de navegación*/
-    background:rebeccapurple; /* Color de fondo del menú de navegación*/
-    padding: 10px;
+nav {
+    display: flex; /* Activa Flexbox en el <nav> para alinear los enlaces */
+    gap: 10px; /* Espaciado entre los enlaces */
 }
