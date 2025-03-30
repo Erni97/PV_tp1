@@ -1,0 +1,18 @@
+
+.nav-enlace{
+    display: inline-block; /* un bloque al lado del otro (en línea).*/
+    background: salmon; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    padding: 10px 30px; /* Espaciado interno */
+    text-decoration: none; /* Sin subrayado */
+}
+
+.nav-enlace:hover{ /* Efecto hover a la clase nav-enlace, e activa cuando el usuario coloca el cursor sobre un elemento y cambia de color*/
+    background: rosybrown;
+}
+
+nav{
+
+    background:  rebeccapurple;
+    padding: 10px;
+}
