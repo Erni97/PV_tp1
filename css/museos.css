@@ -1,0 +1,39 @@
+
+body {
+    background-color: burlywood; 
+}
+
+section { /* espacio entre Secciónes */
+    margin-top: 20px; /* Espacio de 20px */
+}
+
+h1{
+    color: #fff; /* Color del texto */
+    background: rebeccapurple; /* Color de fondo */
+    padding: 10px 30px; /* Espaciado interno. 10 espacio arriba y abajo y 30 espacio a la izquierda y derecha */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+.Bordes_redondeados { /* Clase historia */
+    background-color: lightblue; /* Color de fondo */
+    color: darkblue; /* Color del texto */
+    padding: 10px 30px; /* Espaciado interno. 10 espacio arriba y abajo y 30 espacio a la izquierda y derecha */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+.nav-enlace{ /*clase nav-enlace*/
+    display: inline-block; /* un bloque al lado del otro (en línea).*/
+    background: salmon; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    padding: 10px 30px; /* Espaciado interno */
+    text-decoration: none; /* Sin subrayado */
+}
+
+.nav-enlace:hover{ /* Efecto hover a la clase nav-enlace, e activa cuando el usuario coloca el cursor sobre un elemento y cambia de color*/
+    background: rosybrown;
+}
+
+nav{ /*nav es la etiqueta que contiene el menú de navegación*/
+    background:rebeccapurple; /* Color de fondo del menú de navegación*/
+    padding: 10px;
+}
