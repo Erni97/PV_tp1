@@ -5,6 +5,7 @@ body {
 section { /* espacio entre Secciónes */
     margin-top: 20px; /* Espacio de 20px */
 }
+
 header { /* Encabezado de la página */
     display: flex; /* Activa Flexbox */
     justify-content: space-between; /* Separa el <h1> y el <nav> */
@@ -27,7 +28,7 @@ h1 {
     border-radius: 10px; /* Bordes redondeados */
 }
 
-.nav-enlace {
+.nav-enlace { /* Clase para los enlaces de navegación */
     display: inline-block; /* Mantiene los enlaces en línea */
     background: salmon; /* Color de fondo */
     color: #fff; /* Color del texto */
@@ -36,7 +37,11 @@ h1 {
     border-radius: 5px; /* Bordes redondeados */
 }
 
-nav {
+.nav-enlace:hover { /* Efecto hover al pasar el cursor */
+    background: rosybrown; /* Cambia el color de fondo al pasar el cursor */
+}
+
+nav{
     display: flex; /* Activa Flexbox */
     justify-content: flex-end; /* Alinea los enlaces a la derecha */
     gap: 10px; /* Espaciado entre los enlaces */
